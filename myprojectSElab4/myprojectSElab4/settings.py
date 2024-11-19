@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'appSElist4',  # This is the app we created
 ]
 
 MIDDLEWARE = [
@@ -76,10 +77,15 @@ WSGI_APPLICATION = 'myprojectSElab4.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'myDatabase',  # Change to your database name
+        'USER': 'myuser',  # Change to your PostgreSQL user
+        'PASSWORD': 'Password123456f1',  # Change to your PostgreSQL user password
+        'HOST': 'localhost',
+        'PORT': '5433',  # Use default PostgreSQL port unless you changed it
     }
 }
+
 
 
 # Password validation
