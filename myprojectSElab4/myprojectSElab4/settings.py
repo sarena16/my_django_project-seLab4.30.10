@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'appSElist4',  # This is the app we created
+    'appSElist4',
 ]
 
 MIDDLEWARE = [
