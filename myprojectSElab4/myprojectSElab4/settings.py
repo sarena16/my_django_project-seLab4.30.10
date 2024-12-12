@@ -79,12 +79,20 @@ WSGI_APPLICATION = 'myprojectSElab4.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'myDatabase',  # Change to your database name
-        'USER': 'myuser',  # Change to your PostgreSQL user
-        'PASSWORD': 'Password123456f1',  # Change to your PostgreSQL user password
+        'NAME': 'myDatabase',
+        'USER': 'myuser',
+        'PASSWORD': 'Password123456f1',
         'HOST': 'localhost',
-        'PORT': '5433',  # Use default PostgreSQL port unless you changed it
+        'PORT': '5433',
     }
+}
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
 }
 
 
