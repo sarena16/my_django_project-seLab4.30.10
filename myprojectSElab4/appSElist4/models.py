@@ -4,21 +4,16 @@ from decimal import Decimal
 
 
 class Product(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=150, unique=True, blank=False)
     price = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(Decimal('0.01'))])
-    available = models.BooleanField(default=True)
-
-    def clean(self):
-        if self.price <= 0:
-            raise ValueError("The price must be positive.")
+    available = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
 
-
 class Customer(models.Model):
-    name = models.CharField(max_length=100)
-    address = models.CharField(max_length=255)
+    name = models.CharField(max_length=100, blank=False)
+    address = models.TextField()
 
     def __str__(self):
         return self.name
@@ -44,3 +39,4 @@ class Order(models.Model):
 
     def if_can_be_fulfilled(self):
         return all(product.available for product in self.products.all())
+
