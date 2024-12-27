@@ -156,4 +156,3 @@ class OrderModelTest(TestCase):
         order.products.add(self.product1, self.product2)
         self.assertFalse(order.if_can_be_fulfilled())
 
-        #

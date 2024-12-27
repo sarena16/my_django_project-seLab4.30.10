@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Product, Customer, Order  # Adjust model names to your project
+from .models import Product, Customer, Order
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
