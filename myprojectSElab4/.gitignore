@@ -9,4 +9,5 @@
 /dataSources/
 /dataSources.local.xml
 myenvSEL4/
+*.pyc
 
