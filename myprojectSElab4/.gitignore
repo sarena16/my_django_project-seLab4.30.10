@@ -3,6 +3,9 @@
 __pycache__/
 .DS_Store
 **/.DS_Store
+__pycache__/
+*.pyc
+*.pyo
 
 # Default ignored files
 /shelf/
@@ -12,4 +15,7 @@ __pycache__/
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-myenvSEL4/
+/myenvSEL4/
+
+
+
