@@ -1,4 +1,4 @@
-name: software-engineering-lab-9.
+name: software-engineering-lab-9
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Set up Python
+      - name: Set up environment
         uses: actions/setup-python@v2
         with:
           python-version: 3.12
@@ -34,10 +34,8 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git add docs.json index.html
-          git commit --allow-empty -m "Refreshed documentation"
+          git add docs.json
+          git commit --allow-empty -m "Updated documentation"
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
