@@ -11,4 +11,5 @@ pytz==2024.2
 PyYAML==6.0.2
 sqlparse==0.5.1
 uritemplate==4.1.1
-drf-yasg
+drf-yasg>=1.21.8
+
