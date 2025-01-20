@@ -28,7 +28,7 @@ jobs:
     - name: Generate API documentation
       run: |
         source myenvSEL4/bin/activate
-        python manage.py generateschema > docs.json
+        python myprojectSElab4/manage.py generateschema > docs.json
 
     - name: Commit and push documentation
       run: |
