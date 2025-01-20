@@ -22,6 +22,7 @@ jobs:
           python -m venv venv
           source myenvSEL4/bin/activate
           pip install -r requirements.txt
+
       - name: Generate API documentation
         run: |
           source myenvSEL4/bin/activate
