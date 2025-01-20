@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m venv venv
-        source venv/bin/activate
+        source myenvSEL4/bin/activate
         pip install -r requirements.txt
 
     - name: Generate API documentation
