@@ -22,8 +22,8 @@ jobs:
     - name: Install dependencies
       run: |
          python -m venv myenvSEL4
-    source myenvSEL4/bin/activate
-    pip install -r requirements.txt
+         source myenvSEL4/bin/activate
+         pip install -r requirements.txt
 
     - name: Generate API documentation
       run: |
