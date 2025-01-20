@@ -16,10 +16,10 @@ jobs:
       - name: Set up environment
         uses: actions/setup-python@v2
         with:
-          python-version: 3.12 # zmień wersję na odpowiednią
+          python-version: 3.12
       - name: Install dependencies
         run: |
-          python -m venv venv
+          python -m venv myenvSEL4
           source myenvSEL4/bin/activate
           pip install -r requirements.txt
 
