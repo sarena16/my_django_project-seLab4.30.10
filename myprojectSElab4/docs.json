@@ -480,7 +480,7 @@ components:
           format: float
           multipleOf: 0.01
           maximum: 100000000
-          minimum: !!python/object/apply:decimal.Decimal
+          minimum: 0.01
           - '0.01'
         available:
           type: boolean
@@ -549,4 +549,3 @@ components:
           readOnly: true
       required:
       - refresh
-
