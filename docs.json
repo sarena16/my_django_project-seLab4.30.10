@@ -1,4 +1,4 @@
-openapi: 3.0.0
+openapi: 3.0.2
 info:
   title: ''
   version: ''
@@ -477,7 +477,7 @@ components:
           maxLength: 150
         price:
           type: string
-          format: float
+          format: decimal
           multipleOf: 0.01
           maximum: 100000000
           minimum: !!python/object/apply:decimal.Decimal
