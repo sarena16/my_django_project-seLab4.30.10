@@ -477,7 +477,7 @@ components:
           maxLength: 150
         price:
           type: string
-          format: decimal
+          format: float
           multipleOf: 0.01
           maximum: 100000000
           minimum: !!python/object/apply:decimal.Decimal
