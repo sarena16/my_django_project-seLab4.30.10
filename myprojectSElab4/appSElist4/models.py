@@ -5,7 +5,7 @@ from decimal import Decimal
 
 class Product(models.Model):
     name = models.CharField(max_length=150, unique=True, blank=False)
-    price = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(Decimal('0.01'))])
+    price = models.DecimalField(max_digits=10, decimal_places=2)
     available = models.BooleanField(default=False)
 
     def __str__(self):
